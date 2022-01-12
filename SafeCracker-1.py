@@ -37,11 +37,11 @@ def connect(host, user, password, release):
         
 def main():
     parser = optparse.OptionParser('usage %prog -H <target host> -u <user> -F <password list> ')
-    parser.add_option('-H', dest = "targtHost", type= "string", help =' Specify target host')
+    parser.add_option('-H', dest = "targetHost", type= "string", help =' Specify target host')
     parser.add_option('-F', dest = "passwordFile", type= "string", help =' Specify passwordFile')
     parser.add_option('-u', dest = "user", type= "string", help =' Specify the user')
     options, args = parser.parse_args()
-    host = options.targtHost
+    host = options.targetHost
     passwordFile = options.passwordFile
     user = options.user
     
